@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+    <ir.alimoradian.wo.TouchImageView 
+        android:id="@+id/imgshow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/ll"
+        android:src="@drawable/background"/>
+	<LinearLayout 
+	    android:id="@+id/ll"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:weightSum="2" >
+	    <Button 
+	        android:id="@+id/btnSet"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/background_light"
+	        android:text="Set"
+	        android:onClick="on_btnSet_click"/>
+	    <Button 
+	        android:id="@+id/btnSave"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:textColor="@android:color/background_light"
+	        android:text="Save"
+	        android:onClick="on_btnSave_Click"/>
+	</LinearLayout>
+</RelativeLayout>
